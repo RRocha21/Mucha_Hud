@@ -1,0 +1,31 @@
+doctype html
+html
+	body
+		.container
+				.row
+					.col.s12
+						ul.tabs
+							li.tab.col.s2
+								a.active(href='#bottom_sponsor') Bottom
+							li.tab.col.s2
+								a(href='#top_sponsor') Top
+					#bottom_sponsor.col.s12
+						include bottom_sponsors.pug
+					#top_sponsor.col.s12
+						include top_sponsors.pug
+	script.
+		$('select').formSelect();
+		$('.dropdown-button').dropdown({
+			inDuration: 300,
+			outDuration: 225,
+			constrainWidth: false, // Does not change width of dropdown to that of the activator
+			hover: false, // Activate on hover
+			gutter: 0, // Spacing from edge
+			belowOrigin: false, // Displays dropdown below the button
+			alignment: 'center', // Displays dropdown with edge aligned to the left of button
+			stopPropagation: false // Stops event propagation
+		}
+		);
+		$(document).ready(function(){
+		$('.tabs').tabs();
+		});

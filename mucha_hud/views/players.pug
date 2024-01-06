@@ -1,0 +1,36 @@
+.row
+		form(enctype="multipart/form-data").col.s12
+				.row
+						.input-field.col.s12.m12
+							select#players
+								option(value='default', selected='') New player
+						.input-field.col.s12.m12
+							input#vis_name.validate(placeholder='Displayed Name', type='text', name="displayed_name")
+							input#id(type='hidden', name="_id")
+							label(for='vis_name') Displayed Name
+						.input-field.col.s12.m12
+							input#sid.validate(placeholder='Steam ID 64', type='text', name="sid")
+							input#id(type='hidden', name="_id")
+							label(for='sid') SteamID64
+						.input-field.col.s12.m6
+							.file-field.input-field
+								.btn
+									span Avatar
+									input#avatar(type='file', name='avatar')
+								.file-path-wrapper
+									input.file-path.validate(type='text')
+									label Image Size for Best Quality and No Deformation: 180x180px 
+						.input-field.col.s12.m6
+								.col.s12.m6
+									.card-panel.grey.lighten-5.z-depth-1
+										.row
+											.col.s12 
+												img.responsive-img#avatar_img(alt='')
+												// notice the "circle" class
+										.row
+											.col.s12
+												span.black-text
+													a.waves-effect.waves-light.btn#delete_avatar Delete Avatar
+						.input-field.col.s12
+							a.waves-effect.waves-light.btn#save_player Save player
+							a.waves-effect.waves-light.btn.disabled#delete_player Delete player

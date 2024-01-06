@@ -1,0 +1,28 @@
+.row
+		form(enctype="multipart/form-data").col.s12
+			.row
+				.input-field.col.s12.m12
+					select#top_sponsors
+						option(value='default', selected='') New Sponsor
+				.input-field.col.s12.m12
+					input#top_sponsor_name.validate(placeholder='Top Sponsor Name', type='text', name="top_sponsor_name")
+					input#id(type='hidden', name="_id", value='')
+					label(for='top_sponsor_name') Top Sponsor Name
+				.input-field.col.s12.m6
+					.file-field.input-field
+						.btn
+							span File
+							input#top_sponsor_logo(type='file', name='logo')
+						.file-path-wrapper
+							input.file-path.validate(type='text')
+							label Image Size for Best Quality and No Deformation: 76x72px // Squared
+				.input-field.col.s12.m6
+					.col.s12.m12
+						.card-panel.grey.lighten-5.z-depth-1
+							.row
+								.col.s12
+									img.circle.responsive-img#top_sponsor_logo_img(alt='')
+									// notice the "circle" class
+				.input-field.col.s12
+					a.waves-effect.waves-light.btn#save_top_sponsor Save Sponsor
+					a.waves-effect.waves-light.btn.disabled#delete_top_sponsor Delete Sponsor

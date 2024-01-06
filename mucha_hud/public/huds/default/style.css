@@ -4043,9 +4043,9 @@ sub {
 
 .Team_A>.TeamMoney>.Upper_Container>.txt {
     position: absolute;
-    left: 3px;
-    top: 11px;
-    width: 99px;
+    left: 7px;
+    top: 13px;
+    width: 90px;
     height: 45px;
     z-index: 208;
     /* opacity: 0.3; */
@@ -4056,8 +4056,8 @@ sub {
     color: rgb(236,236,236);
     text-transform: uppercase;
     /* font-weight: 600; */
-    letter-spacing: 1.5;
-    line-height: 1;
+    letter-spacing: 0.7;
+    line-height: 0.9;
     text-align: center;
 }
 
@@ -4114,7 +4114,7 @@ sub {
 .Team_A>.EquipValue>.Upper_Container>.txt {
     position: absolute;
     right: 3px;
-    top: 11px;
+    top: 13px;
     width: 99px;
     height: 45px;
     z-index: 208;
@@ -4126,8 +4126,8 @@ sub {
     color: rgb(236,236,236);
     text-transform: uppercase;
     /* font-weight: 600; */
-    letter-spacing: 1.5;
-    line-height: 1;
+    letter-spacing: 0.7;
+    line-height: 0.9;
     text-align: center;
 }
 
@@ -4216,9 +4216,9 @@ sub {
 
 .Team_B>.TeamMoney>.Upper_Container>.txt {
     position: absolute;
-    left: 3px;
-    top: 11px;
-    width: 99px;
+    left: 7px;
+    top: 13px;
+    width: 90px;
     height: 45px;
     z-index: 208;
     /* opacity: 0.3; */
@@ -4229,8 +4229,8 @@ sub {
     color: rgb(236,236,236);
     text-transform: uppercase;
     /* font-weight: 600; */
-    letter-spacing: 1.5;
-    line-height: 1;
+    letter-spacing: 0.7;
+    line-height: 0.9;
     text-align: center;
 }
 
@@ -4287,7 +4287,7 @@ sub {
 .Team_B>.EquipValue>.Upper_Container>.txt {
     position: absolute;
     right: 3px;
-    top: 11px;
+    top: 13px;
     width: 99px;
     height: 45px;
     z-index: 208;
@@ -4299,8 +4299,8 @@ sub {
     color: rgb(236,236,236);
     text-transform: uppercase;
     /* font-weight: 600; */
-    letter-spacing: 1.5;
-    line-height: 1;
+    letter-spacing: 0.7;
+    line-height: 0.9;
     text-align: center;
 }
 
@@ -4378,7 +4378,7 @@ sub {
 .LossBonus_A>.Upper_Container>.txt {
     position: absolute;
     left: 0px;
-    top: 4px;
+    top: 9px;
     width: 95px;
     height: 45px;
     z-index: 208;
@@ -4390,8 +4390,8 @@ sub {
     color: rgb(236,236,236);
     text-transform: uppercase;
     /* font-weight: 600; */
-    letter-spacing: 3;
-    line-height: 1;
+    letter-spacing: 1;
+    line-height: 0.8;
     text-align: center;
 }
 
@@ -4550,7 +4550,7 @@ sub {
 .LossBonus_B>.Upper_Container>.txt {
     position: absolute;
     left: 0px;
-    top: 4px;
+    top: 9px;
     width: 95px;
     height: 45px;
     z-index: 208;
@@ -4562,8 +4562,8 @@ sub {
     color: rgb(236,236,236);
     text-transform: uppercase;
     /* font-weight: 600; */
-    letter-spacing: 3;
-    line-height: 1;
+    letter-spacing: 1;
+    line-height: 0.8;
     text-align: center;
 }
 
@@ -5383,6 +5383,7 @@ sub {
 
 .MapPick_BG>.Map3 {
     background-image: url("../../files/img/backgroundImage.png");
+    background-size: 250%;
     position: absolute;
     left: 244px;
     top: 0px;

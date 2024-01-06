@@ -1072,7 +1072,8 @@ sub {
 .topbar_i_logo {
     position: absolute;
     background-image: url('../../files/img/backgroundImage.png');
-    background-size: contain;
+    background-size: 410%;
+    background-position: right;
     right: 0px;
     top: 0px;
     width: 84px;
@@ -1102,8 +1103,7 @@ sub {
 
 
 .topbar_i_counter {
-    /*background: url("/files/img/snow.gif");
-    */position: absolute;
+    position: absolute;
     left: 00px;
     top: 0px;
     width: 141px;
@@ -1117,7 +1117,7 @@ sub {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     background-image: url('../../files/img/backgroundImage.png');
-    background-size: contain;
+    background-size: 250%;
 }
 
 .counter_show {
@@ -2087,7 +2087,7 @@ sub {
     bottom: 0px;
     left: 0px;
     z-index: 70;
-    background: linear-gradient( 0deg, rgba(229,57,67,1) 0%, rgba(229,57,67,1) 100%);
+    background: radial-gradient(circle at 50% -20.71%, #f18800 0, #f37600 10%, #f16200 20%, #ea4c00 30%, #df3200 40%, #cf0707 50%, #bd0013 60%, #ad001a 70%, #9e001f 80%, #910024 90%, #850028 100%);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -3868,9 +3868,10 @@ sub {
     transition: all 0.5s ease 0s;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    -moz-border-radius: 10px  ;
-    -ms-border-radius: 10px  ;
-    -o-border-radius: 10px  ;
+    margin-left: 4px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
   .flex_money_bomb>.defuse>.defuse_image {
@@ -3902,6 +3903,7 @@ sub {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    margin-left: 2px;
 }
 
   .flex_money_bomb>.bomb_2>.bomb_image {

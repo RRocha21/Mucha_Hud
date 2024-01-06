@@ -46,7 +46,7 @@ var t_color_hexa = "#b94b23";
 //var ct_color = "0, 172, 230";
 // var dark_ct_color = "0, 0, 0";
 // var dark_t_color = "0, 0, 0";
-var warning = "229,57,67";
+var warning = "145, 0, 36";
 // var warning = "156, 51, 21";
 // var warning = "219, 53, 55";
 //var dark_t_color = "26, 14, 0";
@@ -2316,7 +2316,7 @@ function updatePage(data) {
             $(".time").css("-webkit-text-fill-color", "");
         } else {
             $(".time").css("color", "");   
-            $(".time").css("background-image", 'radial-gradient(circle at 50% -20.71%, rgb(248, 187, 0) 0px, rgb(244, 169, 0) 16.67%, rgb(236, 149, 12) 33.33%, rgb(224, 128, 21) 50%, rgb(210, 108, 27) 66.67%, rgb(197, 90, 31) 83.33%, rgb(185, 75, 35) 100%)');
+            $(".time").css("background-image", 'radial-gradient(circle at 50% -20.71%, #f18800 0, #f37600 10%, #f16200 20%, #ea4c00 30%, #df3200 40%, #cf0707 50%, #bd0013 60%, #ad001a 70%, #9e001f 80%, #910024 90%, #850028 100%)');
             $(".time").css("-webkit-background-clip", "text");
             $(".time").css("-webkit-text-fill-color", "transparent");
         }

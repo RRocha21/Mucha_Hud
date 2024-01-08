@@ -1781,7 +1781,12 @@ function updatePage(data) {
             $(".Game_History>.History_Bar>.Left_Team>.Round_n" + i + ">.Result").css("background-image", "none");
             $(".Game_History>.History_Bar>.Right_Team>.Round_n" + i + ">.Result").css("background-image", "none");
         }
-        for (i = 1; i <= 15; i += 2) {
+        for (i = 0; i < 4; i++) {
+            $(".Game_History>.History_Bar>.Left_Team>.Round_n" + i + ">.Result").css("background-image", "url(../../files/img/History/dot.png)");
+            $(".Game_History>.History_Bar>.Right_Team>.Round_n" + i + ">.Result").css("background-image", "url(../../files/img/History/dot.png)");
+        }
+
+        for (i = 10; i < 13; i++) {
             $(".Game_History>.History_Bar>.Left_Team>.Round_n" + i + ">.Result").css("background-image", "url(../../files/img/History/dot.png)");
             $(".Game_History>.History_Bar>.Right_Team>.Round_n" + i + ">.Result").css("background-image", "url(../../files/img/History/dot.png)");
         }
@@ -1792,27 +1797,27 @@ function updatePage(data) {
         $(".Game_History>.History_Text>.Text").html("GAME HISTORY - 1<sup>ST</sup> HALF");
         $(".Game_History>.History_Bar>.Overtime_Divider").css("opacity", "0");
     } else if (total_rounds < 24) {
-        $(".round_text").html("ROUND  " + round_now + "/30");
+        $(".round_text").html("ROUND  " + round_now + "/24");
         $(".Game_History>.History_Text>.Text").html("GAME HISTORY - 2<sup>ND</sup> HALF");
         $(".Game_History>.History_Bar>.Overtime_Divider").css("opacity", "0");
     } else if (total_rounds < 30) {
-        $(".round_text").html("ROUND  " + round_now + "/36");
+        $(".round_text").html("ROUND  " + round_now + "/30");
         $(".Game_History>.History_Text>.Text").html("GAME HISTORY - 1<sup>ST</sup> OVERTIME");
         $(".Game_History>.History_Bar>.Overtime_Divider").css("opacity", "1");
     } else if (total_rounds < 36) {
-        $(".round_text").html("ROUND  " + round_now + "/42");
+        $(".round_text").html("ROUND  " + round_now + "/36");
         $(".Game_History>.History_Text>.Text").html("GAME HISTORY - 2<sup>ND</sup> OVERTIME");
         $(".Game_History>.History_Bar>.Overtime_Divider").css("opacity", "1");
     } else if (total_rounds < 42) {
-        $(".round_text").html("ROUND  " + round_now + "/48");
+        $(".round_text").html("ROUND  " + round_now + "/42");
         $(".Game_History>.History_Text>.Text").html("GAME HISTORY - 3<sup>RD</sup> OVERTIME");
         $(".Game_History>.History_Bar>.Overtime_Divider").css("opacity", "1");
     } else if (total_rounds < 48) {
-        $(".round_text").html("ROUND  " + round_now + "/54");
+        $(".round_text").html("ROUND  " + round_now + "/48");
         $(".Game_History>.History_Text>.Text").html("GAME HISTORY - 4<sup>TH</sup> OVERTIME");
         $(".Game_History>.History_Bar>.Overtime_Divider").css("opacity", "1");
     } else if (total_rounds < 54) {
-        $(".round_text").html("ROUND  " + round_now + "/60");
+        $(".round_text").html("ROUND  " + round_now + "/54");
         $(".Game_History>.History_Text>.Text").html("GAME HISTORY - 5<sup>TH</sup> OVERTIME");
         $(".Game_History>.History_Bar>.Overtime_Divider").css("opacity", "1");
     } else {
@@ -1939,12 +1944,12 @@ function updatePage(data) {
             nr = i + 1
             y = nr - 30;
 
-            if (nr == 30) z = 1;
-            if (nr == 31) z = 2;
-            if (nr == 32) z = 3;
-            if (nr == 33) z = 10;
-            if (nr == 34) z = 11;
-            if (nr == 35) z = 12;
+            if (nr == 31) z = 1;
+            if (nr == 32) z = 2;
+            if (nr == 33) z = 3;
+            if (nr == 34) z = 10;
+            if (nr == 35) z = 11;
+            if (nr == 36) z = 12;
             if (nr > 30) {
                 if (y <= 3) {
                     if (round_wins[y].startsWith('ct_')) {
@@ -2115,7 +2120,7 @@ function updatePage(data) {
             if (nr == 51) z = 3;
             if (nr == 52) z = 10;
             if (nr == 53) z = 11;
-            if (nr == 64) z = 12;
+            if (nr == 54) z = 12;
             if (nr > 48) {
                 if (y <= 3) {
                     if (round_wins[y].startsWith('ct_')) {

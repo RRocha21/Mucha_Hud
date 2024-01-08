@@ -1484,11 +1484,30 @@ sub {
     font-style: normal;
     color: rgb(236, 236, 236);
     text-transform: uppercase;
+    line-height: 1.7;
+    letter-spacing: 2;
+    position: absolute;
+    left: 90px;
+    top: 1px;
+    width: 285px;
+    height: 61px;
+    z-index: 60;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header_container>.left_background {
+    font-size: 38px;
+    font-family: 'Tektur Condensed';
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(236, 236, 236);
+    text-transform: uppercase;
     line-height: 1.6;
     letter-spacing: 2;
     position: absolute;
     left: 90px;
-    top: 2px;
+    top: 1px;
     width: 285px;
     height: 61px;
     z-index: 58;
@@ -1506,11 +1525,30 @@ sub {
     font-style: normal;
     color: rgb(236, 236, 236);
     text-transform: uppercase;
+    line-height: 1.7;
+    letter-spacing: 2;
+    position: absolute;
+    right: 90px;
+    top: 1px;
+    width: 285px;
+    height: 61px;
+    z-index: 60;
+    text-align: center;
+    overflow: hidden;
+}
+
+.header_container>.right_background {
+    font-size: 38px;
+    font-family: 'Tektur Condensed';
+    font-weight: bold;
+    font-style: normal;
+    color: rgb(236, 236, 236);
+    text-transform: uppercase;
     line-height: 1.6;
     letter-spacing: 2;
     position: absolute;
     right: 90px;
-    top: 2px;
+    top: 1px;
     width: 285px;
     height: 61px;
     z-index: 58;
@@ -1520,6 +1558,8 @@ sub {
     background-size: cover;
     background-position: center;
 }
+
+
 
 .header_container>.left_separator {
     position: absolute;
@@ -1929,11 +1969,11 @@ sub {
 .header_container>.win_container_left{
     position: absolute;
     left: 90px;
-    top: -1px;
+    top: 1px;
     width: 285px;
     height: 61px;
     background: rgba(0, 0, 0, 1);
-    z-index: 55;
+    z-index: 59;
     opacity: 0;
     transform: translateX(250px);
     -webkit-transform: translateX(250px);
@@ -1945,11 +1985,11 @@ sub {
 .header_container>.pause_container_left{
     position: absolute;
     left: 90px;
-    top: -1px;
+    top: 1px;
     width: 285px;
     height: 61px;
     background: rgba(0, 0, 0, 1);
-    z-index: 55;
+    z-index: 59;
     opacity: 0;
     transform: translateX(250px);
     -webkit-transform: translateX(250px);
@@ -2021,11 +2061,11 @@ sub {
 .header_container>.win_container_right{
     position: absolute;
     right: 90px;
-    top: -1px;
+    top: 1px;
     width: 285px;
     height: 61px;
     background: rgba(0, 0, 0, 1);
-    z-index: 55;
+    z-index: 59;
     opacity: 0;
     transform: translateX(-250px);
     -webkit-transform: translateX(-250px);
@@ -2037,11 +2077,11 @@ sub {
 .header_container>.pause_container_right{
     position: absolute;
     right: 90px;
-    top: -1px;
+    top: 1px;
     width: 285px;
     height: 61px;
     background: rgba(0, 0, 0, 1);
-    z-index: 55;
+    z-index: 59;
     opacity: 0;
     transform: translateX(-250px);
     -webkit-transform: translateX(-250px);

@@ -1969,9 +1969,9 @@ sub {
 .header_container>.win_container_left{
     position: absolute;
     left: 90px;
-    top: 1px;
+    top: 0px;
     width: 285px;
-    height: 61px;
+    height: 62px;
     background: rgba(0, 0, 0, 1);
     z-index: 59;
     opacity: 0;
@@ -1985,9 +1985,9 @@ sub {
 .header_container>.pause_container_left{
     position: absolute;
     left: 90px;
-    top: 1px;
+    top: 0px;
     width: 285px;
-    height: 61px;
+    height: 62px;
     background: rgba(0, 0, 0, 1);
     z-index: 59;
     opacity: 0;
@@ -2061,9 +2061,9 @@ sub {
 .header_container>.win_container_right{
     position: absolute;
     right: 90px;
-    top: 1px;
+    top: 0px;
     width: 285px;
-    height: 61px;
+    height: 62px;
     background: rgba(0, 0, 0, 1);
     z-index: 59;
     opacity: 0;
@@ -2077,9 +2077,9 @@ sub {
 .header_container>.pause_container_right{
     position: absolute;
     right: 90px;
-    top: 1px;
+    top: 0px;
     width: 285px;
-    height: 61px;
+    height: 62px;
     background: rgba(0, 0, 0, 1);
     z-index: 59;
     opacity: 0;

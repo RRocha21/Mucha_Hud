@@ -2592,10 +2592,12 @@ function updatePage(data) {
             if (side == "left") {
                 $(".win_container_left").css("transform", "translateX(0px)").css("transition", "all 0.6s ease 0.1s");
                 $(".win_container_left").css("opacity", "1");
+                $(".win_text_left").css("transform", "translateY(0px)").css("transition", "all 0.6s ease 0.1s");
                 $(".win_text_left").css("opacity", "1").css("transition", "all 0.4s ease 0s");
             } else if (side == "right") {
                 $(".win_container_right").css("transform", "translateX(0px)").css("transition", "all 0.6s ease 0.1s");
                 $(".win_container_right").css("opacity", "1");
+                $(".win_text_right").css("transform", "translateY(0px)").css("transition", "all 0.6s ease 0.1s");
                 $(".win_text_right").css("opacity", "1").css("transition", "all 0.4s ease 0s");
             }
 
@@ -2605,8 +2607,8 @@ function updatePage(data) {
 
             $(".win_container_left").css("transform", "translateX(270px)").css("transition", "all 0.8s ease 0.4s");
             $(".win_container_right").css("transform", "translateX(-270px)").css("transition", "all 0.8s ease 0.4s");
-            $(".win_container_left").css("opacity", "0");
-            $(".win_container_right").css("opacity", "0");
+            $(".win_text_left").css("transform", "translateY(-50px)").css("transition", "all 0.6s ease 0.1s");
+            $(".win_text_right").css("transform", "translateY(-50px)").css("transition", "all 0.6s ease 0.1s");
             $(".win_text_right").css("opacity", "0").css("transition", "all 1s ease 0.6s");
             $(".win_text_left").css("opacity", "0").css("transition", "all 1s ease 0.6s");
         }

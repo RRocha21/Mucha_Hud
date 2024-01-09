@@ -2826,8 +2826,8 @@ function updatePage(data) {
             hideSpam();
         }
 
-        var pause_now_left = 5 - teams.left.timeouts;
-        var pause_now_right = 5 - teams.right.timeouts;
+        var pause_now_left = 3 - teams.left.timeouts;
+        var pause_now_right = 3 - teams.right.timeouts;
 
         // Update Timer 
         console.log(pause_now_right);
@@ -2882,6 +2882,9 @@ function updatePage(data) {
                     $(".header_container>.Pause_Left>.Lower_container").css("transition", "all 0.6s ease-out 0.3s").css("transform", "translate(0px, 0px)");
                     $(".pause_container_left").css("transition", "all 0.4s ease-out 0.1s").css("opacity", "1");
                     $(".pause_container_left").css("transition", "all 0.4s ease-out 0.1s").css("transform", "translate(0px, 0px)");
+                    if (total_rounds > 24) {
+                        $(".header_container>.Pause_Left>.Lower_container").css("opacity", "0");
+                    }
 
                 } else if (side == "right") {
                     $(".header_container>.Pause_Right>.Pause_Text").html("TACTICAL PAUSE");
@@ -2928,6 +2931,10 @@ function updatePage(data) {
                     $(".header_container>.Pause_Right>.Lower_container").css("transition", "all 0.6s ease-out 0.3s").css("transform", "translate(0px, 0px)");
                     $(".pause_container_right").css("transition", "all 0.4s ease-out 0.1s").css("opacity", "1");
                     $(".pause_container_right").css("transition", "all 0.4s ease-out 0.1s").css("transform", "translate(0px, 0px)");
+
+                    if (total_rounds > 24) {
+                        $(".header_container>.Pause_Right>.Lower_container").css("opacity", "0");
+                    }
                 }
             }
 
